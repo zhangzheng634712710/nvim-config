@@ -80,9 +80,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 ```sh
 if command -v curl >/dev/null 2>&1; then
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/zhangzheng634712710/nvim-config/tree/zz-config/scripts/install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/zhangzheng634712710/nvim-config/zz-config/scripts/install.sh)"
 else
-    bash -c "$(wget -O- https://raw.githubusercontent.com/zhangzheng634712710/nvim-config/tree/zz-config/scripts/install.sh)"
+    bash -c "$(wget -O- https://raw.githubusercontent.com/zhangzheng634712710/nvim-config/zz-config/scripts/install.sh)"
 fi
 ```
 
