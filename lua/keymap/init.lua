@@ -23,7 +23,7 @@ bind.nvim_load_mapping(plug_map)
 
 -- Plugin keymaps
 -- require("keymap.completion")
-require("keymap.editor")
+-- require("keymap.editor")
 -- require("keymap.lang")
 require("keymap.tool")
 -- require("keymap.ui")
