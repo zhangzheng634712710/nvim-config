@@ -171,7 +171,7 @@ check_nvim_version() {
 
 clone_repo() {
 	if check_nvim_version "${REQUIRED_NVIM_VERSION}"; then
-		execute "git" "clone" "-b" "main" "${CLONE_ATTR[@]}" "$1" "${DEST_DIR}"
+		execute "git" "clone" "-b" "zz-config" "${CLONE_ATTR[@]}" "$1" "${DEST_DIR}"
 	elif check_nvim_version "${REQUIRED_NVIM_VERSION_LEGACY}"; then
 		warn "You have outdated Nvim installed (< ${REQUIRED_NVIM_VERSION})."
 		info "Automatically redirecting you to the latest compatible version..."
@@ -246,7 +246,7 @@ if [[ -n "${NONINTERACTIVE-}" ]]; then
 	USE_SSH=0
 fi
 
-info "This script will install ayamir/nvimdots to:"
+info "This script will install zhangzheng634712710 nvim-config to:"
 echo "${DEST_DIR}"
 
 if [[ -d "${DEST_DIR}" ]]; then
@@ -270,9 +270,9 @@ fi
 
 info "Fetching in progress..."
 if [[ "${USE_SSH}" -eq "1" ]]; then
-	clone_repo "git@github.com:ayamir/nvimdots.git"
+	clone_repo "git@github.com:zhangzheng634712710/nvim-config.git"
 else
-	clone_repo "https://github.com/ayamir/nvimdots.git"
+	clone_repo "https://github.com/zhangzheng634712710/nvim-config.git"
 fi
 
 cd "${DEST_DIR}" || return
