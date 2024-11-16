@@ -14,7 +14,7 @@ local plug_map = {
 	-- Plugin: nvim-tree
 	["n|<F1>"] = map_cr("NvimTreeToggle"):with_noremap():with_silent():with_desc("filetree: Toggle"),
 	-- ["n|<leader>nf"] = map_cr("NvimTreeFindFile"):with_noremap():with_silent():with_desc("filetree: Find file"),
-	-- ["n|<leader>nr"] = map_cr("NvimTreeRefresh"):with_noremap():with_silent():with_desc("filetree: Refresh"),
+	["n|<F5>"] = map_cr("NvimTreeRefresh"):with_noremap():with_silent():with_desc("filetree: Refresh"),
 
 	-- -- Plugin: sniprun
 	-- ["v|<leader>r"] = map_cr("SnipRun"):with_noremap():with_silent():with_desc("tool: Run code by range"),
@@ -96,13 +96,13 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("tool: Find files"),
-	-- ["n|<leader>fp"] = map_callback(function()
-	-- 		require("search").open({ collection = "pattern" })
-	-- 	end)
-	-- 	:with_noremap()
-	-- 	:with_silent()
-	-- 	:with_desc("tool: Find patterns"),
-	["v|<leader>fw"] = map_cu("Telescope grep_string")
+	["n|<leader>fp"] = map_callback(function()
+			require("search").open({ collection = "pattern" })
+		end)
+		:with_noremap()
+		:with_silent()
+		:with_desc("tool: Find patterns"),
+	["v|<leader>fs"] = map_cu("Telescope grep_string")
 		:with_noremap()
 		:with_silent()
 		:with_desc("tool: Find word under cursor"),
