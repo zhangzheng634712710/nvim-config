@@ -40,27 +40,27 @@ local plug_map = {
 	-- 	:with_silent()
 	-- 	:with_desc("terminal: Toggle vertical"),
 	-- ["t|<A-\\>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
-	-- ["n|<F5>"] = map_cr("ToggleTerm direction=vertical")
-	-- 	:with_noremap()
-	-- 	:with_silent()
-	-- 	:with_desc("terminal: Toggle vertical"),
-	-- ["i|<F5>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=vertical<CR>")
-	-- 	:with_noremap()
-	-- 	:with_silent()
-	-- 	:with_desc("terminal: Toggle vertical"),
-	-- ["t|<F5>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
+	["n|<F2>"] = map_cr("ToggleTerm direction=vertical")
+		:with_noremap()
+		:with_silent()
+		:with_desc("terminal: Toggle vertical"),
+	["i|<F2>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=vertical<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("terminal: Toggle vertical"),
+	["t|<F2>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
 	-- ["n|<A-d>"] = map_cr("ToggleTerm direction=float"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
 	-- ["i|<A-d>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=float<CR>")
 	-- 	:with_noremap()
 	-- 	:with_silent()
 	-- 	:with_desc("terminal: Toggle float"),
 	-- ["t|<A-d>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
-	-- ["n|<leader>gg"] = map_callback(function()
-	-- 		_toggle_lazygit()
-	-- 	end)
-	-- 	:with_noremap()
-	-- 	:with_silent()
-	-- 	:with_desc("git: Toggle lazygit"),
+	["n|<F3>"] = map_callback(function()
+			_toggle_lazygit()
+		end)
+		:with_noremap()
+		:with_silent()
+		:with_desc("git: Toggle lazygit"),
 
 	-- -- Plugin: trouble
 	-- ["n|gt"] = map_cr("Trouble diagnostics toggle"):with_noremap():with_silent():with_desc("lsp: Toggle trouble list"),
