@@ -40,21 +40,21 @@ local plug_map = {
 	-- 	:with_silent()
 	-- 	:with_desc("terminal: Toggle vertical"),
 	-- ["t|<A-\\>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
-	["n|<F2>"] = map_cr("ToggleTerm direction=vertical")
-		:with_noremap()
-		:with_silent()
-		:with_desc("terminal: Toggle vertical"),
-	["i|<F2>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=vertical<CR>")
-		:with_noremap()
-		:with_silent()
-		:with_desc("terminal: Toggle vertical"),
-	["t|<F2>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
-	-- ["n|<A-d>"] = map_cr("ToggleTerm direction=float"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
-	-- ["i|<A-d>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=float<CR>")
+	-- ["n|<F2>"] = map_cr("ToggleTerm direction=vertical")
 	-- 	:with_noremap()
 	-- 	:with_silent()
-	-- 	:with_desc("terminal: Toggle float"),
-	-- ["t|<A-d>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
+	-- 	:with_desc("terminal: Toggle vertical"),
+	-- ["i|<F2>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=vertical<CR>")
+	-- 	:with_noremap()
+	-- 	:with_silent()
+	-- 	:with_desc("terminal: Toggle vertical"),
+	-- ["t|<F2>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle vertical"),
+	["n|<F2>"] = map_cr("ToggleTerm direction=float"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
+	["i|<F2>"] = map_cmd("<Esc><Cmd>ToggleTerm direction=float<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("terminal: Toggle float"),
+	["t|<F2>"] = map_cmd("<Cmd>ToggleTerm<CR>"):with_noremap():with_silent():with_desc("terminal: Toggle float"),
 	["n|<F3>"] = map_callback(function()
 			_toggle_lazygit()
 		end)
