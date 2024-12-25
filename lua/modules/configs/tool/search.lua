@@ -56,6 +56,13 @@ return function()
 							builtin.grep_string(opts)
 						end,
 					},
+					{
+						name = "Word under current buffer",
+						tele_func = function(opts)
+							opts = opts or {}
+							builtin.current_buffer_fuzzy_find(opts)
+						end,
+					},
 				},
 			},
 			-- Search Git objects (branches, commits)
