@@ -6,11 +6,11 @@ settings["use_ssh"] = true
 
 -- Set it to false if you don't use copilot
 ---@type boolean
-settings["use_copilot"] = true
+settings["use_copilot"] = false
 
 -- Set it to false if there is no need to format on save.
 ---@type boolean
-settings["format_on_save"] = true
+settings["format_on_save"] = false
 
 -- Set format timeout here (in ms).
 ---@type number
@@ -86,7 +86,7 @@ settings["palette_overwrite"] = {}
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`.
 ---@type string
-settings["colorscheme"] = "catppuccin"
+settings["colorscheme"] = "catppuccin-macchiato"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean
@@ -114,7 +114,7 @@ settings["lsp_deps"] = {
 	"jsonls",
 	"lua_ls",
 	"pylsp",
-	"gopls",
+--	"gopls",
 }
 
 -- Set the general-purpose servers that will be installed during bootstrap here.
@@ -123,13 +123,13 @@ settings["lsp_deps"] = {
 -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins
 ---@type string[]
 settings["null_ls_deps"] = {
-	"clang_format",
-	"gofumpt",
-	"goimports",
-	"prettier",
-	"shfmt",
-	"stylua",
-	"vint",
+--	"clang_format",
+--	"gofumpt",
+--	"goimports",
+--	"prettier",
+--	"shfmt",
+--	"stylua",
+--	"vint",
 }
 
 -- Set the Debug Adapter Protocol (DAP) clients that will be installed and configured during bootstrap here.
