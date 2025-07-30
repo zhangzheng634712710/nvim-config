@@ -13,4 +13,4 @@ local mappings = {
 	},
 }
 
-bind.nvim_load_mapping(mappings.plugins)
+-- bind.nvim_load_mapping(mappings.plugins)

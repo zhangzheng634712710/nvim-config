@@ -8,7 +8,7 @@ local mappings = {
 		["n|<A-S-f>"] = map_cr("Format"):with_noremap():with_silent():with_desc("formatter: Format buffer manually"),
 	},
 }
-bind.nvim_load_mapping(mappings.fmt)
+-- bind.nvim_load_mapping(mappings.fmt)
 
 --- The following code allows this file to be exported ---
 ---    for use with LSP lazy-loaded keymap bindings    ---
@@ -80,7 +80,7 @@ function M.lsp(buf)
 			:with_silent()
 			:with_desc("lsp: Toggle inlay hints dispaly of current buffer"),
 	}
-	bind.nvim_load_mapping(map)
+	-- bind.nvim_load_mapping(map)
 
 	local ok, user_mappings = pcall(require, "user.keymap.completion")
 	if ok and type(user_mappings.lsp) == "function" then

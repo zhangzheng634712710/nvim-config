@@ -34,7 +34,7 @@ local mappings = {
 	},
 }
 
-bind.nvim_load_mapping(mappings.core)
+-- bind.nvim_load_mapping(mappings.core)
 
 -- Builtin & Plugin keymaps
 require("keymap.completion")
